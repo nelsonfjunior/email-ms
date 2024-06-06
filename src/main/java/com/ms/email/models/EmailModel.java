@@ -3,6 +3,7 @@ package com.ms.email.models;
 import com.ms.email.enums.StatusEmail;
 import jakarta.persistence.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -10,6 +11,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "tb_emails")
 public class EmailModel implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
